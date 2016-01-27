@@ -19,6 +19,4 @@
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-    <mvc:resources mapping="/script/**" location=""/>
-
 </beans>

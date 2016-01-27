@@ -75,6 +75,7 @@ public class SeckillControl {
             method = RequestMethod.POST)
     @ResponseBody
     public Result<SeckillExpose> expose(@PathVariable long seckillId) {
+        System.out.println("result -expose" +seckillId);
         Result<SeckillExpose> result;
         SeckillExpose expose = seckillService.exportSeckillUrl(seckillId);
         result = new Result<SeckillExpose>(true, expose);
