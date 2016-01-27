@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--打开Spring 中的Annotation支持 -->
+    <context:annotation-config></context:annotation-config>
+    <context:property-placeholder location="classpath:spring/jdbc.properties"/>
+    <!-- 配置数据库连接池 -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="jdbcUrl" value="${jdbcurl}"/>
+        <property name="user" value="${mysqluse}"/>
+        <property name="password" value="${password}"/>
+        <property name="driverClass" value="${driver}"/>
+
+    </bean>
+    <!-- 配置sqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+       <!--- 注入数据库连接池 -->
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:mybatis/mybatis_setting.xml"/>
+        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
+        <!--扫描enity 包 使用别名 -->
+        <property name="typeAliasesPackage" value="com.sohu.tv.cn.enity"/>
+    </bean>
+    <!--配置扫描dao接口动态实现到接口，并注入到spring容器中 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--注入sqlSessionFactory -->
+        <property name="sqlSessionFactoryBeanName"  value="sqlSessionFactory"/>
+        <!-- 注入dao借口 -->
+        <property name="basePackage" value="com.sohu.tv.cn.dao"></property>
+    </bean>
+</beans>

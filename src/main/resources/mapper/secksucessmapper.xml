@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//5mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sohu.tv.cn.dao.SeckillSuccessDao">
+    <insert id="insertsucesseckillId">
+           INSERT ignore  into success_seck(seckill_id,usertel,state)
+             VALUES  (#{seckid} ,#{userphone} ,#{state});
+       </insert>
+    <resultMap id="skillResult" type="SeckillSuccess">
+        <id property="seckillId" column="seckill_id"/>
+        <result property="state" column="state"/>
+        <result property="usertel" column="usertel"/>
+        <result property="createtime" column="create_time"/>
+        <association property="seckill" javaType="com.sohu.tv.cn.enity.Seckill">
+            <id property="seckillId" column="seckill_id"/>
+            <result property="seckinfo" column="seck_info"/>
+            <result property="secknum" column="secknum"/>
+            <result property="seckseller" column="seckseller"/>
+            <result property="startTime" column="start_time"/>
+            <result property="endTime" column="end_time"/>
+        </association>
+    </resultMap>
+    <select id="queryByIdwidthSeckill" resultMap="skillResult">
+          SELECT  success_seck.seckill_id,
+                   success_seck.state,
+                   success_seck.usertel,
+                   seckinfotable.seckill_id,
+                   seckinfotable.seckinfo,
+                   seckinfotable.secknum,
+                   seckinfotable.seckseller,
+                   seckinfotable.start_time,
+                   seckinfotable.end_time
+                     from
+                       success_seck, seckinfotable
+                      WHERE  success_seck.seckill_id= seckinfotable.seckill_id
+                      and success_seck.seckill_id=#{seckillId}
+          and success_seck.usertel=#{userphone};
+       </select>
+</mapper>
