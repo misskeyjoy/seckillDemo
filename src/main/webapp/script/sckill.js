@@ -62,7 +62,7 @@ var seckill={
                   console.info("result"+result["startTime"]);
                }else{
                   alert("请检查网络状态");
-                   $("#btn_sekill").addClass("disabled");
+                   $("#btn_sekill").model();
                }
             }
           });

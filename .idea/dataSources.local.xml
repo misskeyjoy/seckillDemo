@@ -5,5 +5,11 @@
       <secret-storage>memory</secret-storage>
       <first-sync>true</first-sync>
     </data-source>
+    <data-source name="MySQL - seckill@localhost" uuid="cacc4433-6933-465d-a5d7-acb3fa02a6c6">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>seckill.*</schema-pattern>
+      <default-schemas>seckill.*</default-schemas>
+    </data-source>
   </component>
 </project>
