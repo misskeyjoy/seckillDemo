@@ -2,9 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ef4f9a6-f1f7-4634-be46-0b860e9a5acf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/sohu/tv/cn/dto/Result.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/sohu/tv/cn/web/SeckillControl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/com/sohu/tv/cn/dao/SeckillDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/com/sohu/tv/cn/dao/SeckillSuccessDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/com/sohu/tv/cn/dto/Result.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/com/sohu/tv/cn/dto/SeckillExpose.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/com/sohu/tv/cn/dto/SeckillResult.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/com/sohu/tv/cn/dto/SeckillStateEnum.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/com/sohu/tv/cn/enity/Seckill.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/com/sohu/tv/cn/enity/SeckillSuccess.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/com/sohu/tv/cn/exception/RepeatSeckillException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/com/sohu/tv/cn/exception/SeckillCloseException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/com/sohu/tv/cn/exception/SeckillException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/com/sohu/tv/cn/service/SeckillService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/com/sohu/tv/cn/service/impl/SeckillServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/com/sohu/tv/cn/web/SeckillControl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/c3p0-0.9.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.7.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.7.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.7.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet-api-3.1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/mchange-commons-java-0.2.3.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.3.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.2.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.17.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.12.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/spring-test-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/lib/standard-1.1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/images/bg-banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/images/img-sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.directory" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/SkillDemo_war_exploded/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/spring/spring.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/mapper/seckillmapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/mapper/secksucessmapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mybatis_setting.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/spring/jdbc.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-dao.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-mvc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-service.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/spring/spring.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/classes/sql/seckill.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/jsp/common/jstl.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/jsp/detail.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/jsp/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/jsp/list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/css/jquery.countdown.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/images/.directory" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/script/jquery-1.11.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/script/jquery.cookie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/script/jquery.countdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/script/sckill.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/skilldemo-1.0-SNAPSHOT/script/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sohu/tv/cn/web/SeckillControl.java" afterPath="$PROJECT_DIR$/src/main/java/com/sohu/tv/cn/web/SeckillControl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/detail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/detail.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/jquery.countdown.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/jquery.countdown.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/script/sckill.js" afterPath="$PROJECT_DIR$/src/main/webapp/script/sckill.js" />
     </list>
     <ignored path="SkillDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,6 +110,16 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - seckill@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -55,16 +142,66 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/script/sckill.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+              <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SeckillSuccessDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sohu/tv/cn/dao/SeckillSuccessDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SeckillExpose.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sohu/tv/cn/dto/SeckillExpose.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seckill.seckinfotable" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/d030823/cacc4433-6933-465d-a5d7-acb3fa02a6c6/seckill.seckinfotable">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seckill.success_seck" pinned="false" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/d030823/cacc4433-6933-465d-a5d7-acb3fa02a6c6/seckill.success_seck">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cacc4433-6933-465d-a5d7-acb3fa02a6c6/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.03202847">
+            <state vertical-scroll-proportion="-0.6">
               <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
@@ -75,30 +212,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sohu/tv/cn/web/SeckillControl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="79" column="32" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
+              <caret line="100" column="162" selection-start-line="100" selection-start-column="162" selection-end-line="100" selection-end-column="162" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -113,31 +230,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.countdown.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/jquery.countdown.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="detail.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/detail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="7.3333335">
-              <caret line="13" column="95" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="95" />
+            <state vertical-scroll-proportion="-8.0">
+              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -209,10 +306,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/script/jquery.cookie.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cacc4433-6933-465d-a5d7-acb3fa02a6c6/console.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/detail.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/sohu/tv/cn/web/SeckillControl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/script/sckill.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cacc4433-6933-465d-a5d7-acb3fa02a6c6/console.sql" />
       </list>
     </option>
   </component>
@@ -819,7 +916,7 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.25269344" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="project.structure.last.edited" value="Facets" />
@@ -1563,7 +1660,7 @@
       <workItem from="1453885137179" duration="10972000" />
       <workItem from="1453900450226" duration="11345000" />
       <workItem from="1453945804029" duration="1662000" />
-      <workItem from="1453947810918" duration="1284000" />
+      <workItem from="1453947810918" duration="11578000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1453871227842</created>
@@ -1589,7 +1686,19 @@
       <option name="project" value="LOCAL" />
       <updated>1453949089207</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加倒数时&#10;">
+      <created>1453949105119</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1453949105119</updated>
+    </task>
+    <task id="LOCAL-00006" summary="添加倒数时&#10;">
+      <created>1453949510327</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1453949510327</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1625,7 +1734,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159444000" />
+    <option name="totallyTimeSpent" value="169738000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1643,27 +1752,27 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32471728" sideWeight="0.47885197" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48465267" sideWeight="0.47885197" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5030211" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279483" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3602585" sideWeight="0.46978852" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35379645" sideWeight="0.46978852" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.49697885" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23716012" sideWeight="0.45708156" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24924472" sideWeight="0.45708156" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23111783" sideWeight="0.5121163" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3942598" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24924472" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23716012" sideWeight="0.54291844" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5444265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5686591" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1727,7 +1836,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1740,27 +1849,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sohu/tv/cn/exception/SeckillException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sohu/tv/cn/exception/RepeatSeckillException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sohu/tv/cn/enity/SeckillSuccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sohu/tv/cn/dto/SeckillResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1985,14 +2073,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sohu/tv/cn/dto/SeckillExpose.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036144577">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/script/jquery-1.11.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2089,6 +2169,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cacc4433-6933-465d-a5d7-acb3fa02a6c6/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/script/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2097,10 +2185,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/detail.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sohu/tv/cn/dto/SeckillExpose.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.3333335">
-          <caret line="13" column="95" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="95" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sohu/tv/cn/dao/SeckillSuccessDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -2108,25 +2204,51 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sohu/tv/cn/web/SeckillControl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="32" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
+          <caret line="100" column="162" selection-start-line="100" selection-start-column="162" selection-end-line="100" selection-end-column="162" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/script/sckill.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/detail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+        <state vertical-scroll-proportion="-8.0">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cacc4433-6933-465d-a5d7-acb3fa02a6c6/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/script/sckill.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03202847">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/d030823/cacc4433-6933-465d-a5d7-acb3fa02a6c6/seckill.seckinfotable">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/d030823/cacc4433-6933-465d-a5d7-acb3fa02a6c6/seckill.success_seck">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

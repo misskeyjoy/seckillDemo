@@ -62,8 +62,9 @@ public class SeckillControl {
      */
     @RequestMapping(value = "/date", produces = "application/json;charset=UTF-8", method = RequestMethod.GET)
     @ResponseBody
-    public Result<Long> getDate() {
+    public Result<Long> getDate(HttpServletResponse response) {
         Date date = new Date();
+        response.setHeader("Access-Control-Allow-Origin", "*");
         return new Result<Long>(true, date.getTime());
     }
 
@@ -77,6 +78,9 @@ public class SeckillControl {
     @ResponseBody
     public Result<SeckillExpose> expose(@PathVariable long seckillId, HttpServletResponse response) {
         System.out.println("result -expose" +seckillId);
+        /**
+         * todo   解决跨域问题
+         */
         response.setHeader("Access-Control-Allow-Origin", "*");
         Result<SeckillExpose> result;
         SeckillExpose expose = seckillService.exportSeckillUrl(seckillId);
@@ -94,7 +98,7 @@ public class SeckillControl {
     @RequestMapping(value = "/{seckillId}/{md5}/execute", produces = "application/json;charset=UTF-8", method = RequestMethod.POST)
     //@RequestBody(name ="application/json,utf-8",required = false)
     @ResponseBody
-    public Result<SeckillResult> excuete(@PathVariable long seckillid, @PathVariable String md5, @CookieValue(value = "skillphone", required = false) Long phone) {
+    public Result<SeckillResult> excuete(@PathVariable(value = "seckillId") long seckillid, @PathVariable(value = "md5") String md5, @CookieValue(value = "seckill", required = false) Long phone,HttpServletResponse response) {
         /**
          * 不存在的  -> 表示Cookie 中不存在该值
          *
@@ -125,6 +129,7 @@ public class SeckillControl {
         Seckill seckill = seckillService.getSeckillById(seckillId);
         if (seckill == null) {
             return "list";
+
         }
         model.addAttribute("seckill", seckill);
         return "detail";

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//5mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sohu.tv.cn.dao.SeckillDao">
+    <!--通过id 来查找相应的数据 -->
+    <select id="queryById" resultType="Seckill">
+        SELECT seckill_id,seckinfo ,secknum,seckseller,start_time,end_time from seckinfotable WHERE  seckill_id=#{seckillid};
+    </select>
+    <!-- 通过分页查找相应的数据-->
+    <select id="queryAll" resultType="Seckill">
+         SELECT seckill_id,seckinfo ,secknum,seckseller,start_time,end_time from seckinfotable limit #{start},#{offset};
+    </select>
+    <!-- 开始秒杀 -->
+    <update id="reduceNumber">
+        UPDATE  seckinfotable set secknum=secknum-1 WHERE  seckill_id=#{seckillid} and #{seckilltime} between start_time
+        and end_time and secknum>0;
+    </update>
+</mapper>
