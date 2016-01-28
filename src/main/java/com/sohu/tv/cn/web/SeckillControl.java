@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 import java.util.List;
 
@@ -74,8 +75,9 @@ public class SeckillControl {
     @RequestMapping(value = "/{seckillId}/exposeurl", produces = "application/json;charset=UTF-8",
             method = RequestMethod.POST)
     @ResponseBody
-    public Result<SeckillExpose> expose(@PathVariable long seckillId) {
+    public Result<SeckillExpose> expose(@PathVariable long seckillId, HttpServletResponse response) {
         System.out.println("result -expose" +seckillId);
+        response.setHeader("Access-Control-Allow-Origin", "*");
         Result<SeckillExpose> result;
         SeckillExpose expose = seckillService.exportSeckillUrl(seckillId);
         result = new Result<SeckillExpose>(true, expose);

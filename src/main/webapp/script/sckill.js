@@ -24,7 +24,7 @@ var seckill={
           $.ajax({
             type: 'POST',
             url: seckill.url.getExposeUrl(id),
-            dataType:"json",
+            dataType:"html",
             success: function(data){
                //数据成功返回
                if(data["success"]){
@@ -36,7 +36,9 @@ var seckill={
                   if(expose){
                     console.info("在秒杀中");
                     //md5 是什么时候获取呢
-
+                    $("#btn_sekill").one('click',function() {
+                        alert("点滴了");
+                    })
                   }else{
                      console.info(("秒杀结束或未开启"));
                      //判断是未开启还是结束
@@ -47,7 +49,7 @@ var seckill={
                             $("#span_time"). countdown(starttime,function(event){
                                               $("#span_time").html(event.strftime(' %D天 %H小时 %M分%S秒'))
                                              }).on('finish.countdown',function(){
-                                                       seckill.executeSeckill(id);
+                                                     window.location.reload();
                                                 });
                      }else {
                        $("#btn_sekill").html("秒杀已经结束");
@@ -64,6 +66,10 @@ var seckill={
 
  },
  computeTime:function(){
+
+ },
+ //正在的秒杀
+ seckillProduct:function(){
 
  },
  getCurrentTime:function (){
