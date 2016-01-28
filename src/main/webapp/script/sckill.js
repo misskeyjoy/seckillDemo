@@ -24,15 +24,18 @@ var seckill={
           $.ajax({
             type: 'POST',
             url: seckill.url.getExposeUrl(id),
-            dataType:"html",
+
             success: function(data){
                //数据成功返回
+               console.info("data"+data["data"]["md5"]);
                if(data["success"]){
                   var result=data["data"];
                   var expose=result["expose"];
                   var starttime=result["startTime"];
                   var endtime=result["endTime"];
                   var md5=result["md5"];
+
+                  console.info("expose"+ expose);
                   if(expose){
                     console.info("在秒杀中");
                     //md5 是什么时候获取呢
@@ -59,6 +62,7 @@ var seckill={
                   console.info("result"+result["startTime"]);
                }else{
                   alert("请检查网络状态");
+                   $("#btn_sekill").addClass("disabled");
                }
             }
           });

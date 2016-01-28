@@ -3,4 +3,103 @@
   <data-source name="MySQL - @localhost" uuid="e11b48c2-281a-420e-a630-57e6abd51abe">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source name="MySQL - seckill@localhost" uuid="cacc4433-6933-465d-a5d7-acb3fa02a6c6">
+    <database-info product="MySQL" version="5.6.28-0ubuntu0.15.10.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="seckill"/>
+      <table id="2" parent="1" name="seckinfotable">
+        <comment>商品秒杀表</comment>
+      </table>
+      <table id="3" parent="1" name="success_seck">
+        <comment>秒杀信息表</comment>
+      </table>
+      <column id="4" parent="2" name="seckill_id">
+        <comment>秒杀商品的id</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="5" parent="2" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="6" parent="2" name="seckinfo">
+        <comment>商品的详细信息</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="7" parent="2" name="secknum">
+        <comment>商品的数量</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="8" parent="2" name="seckseller">
+        <comment>商品的卖家信息</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="9" parent="2" name="start_time">
+        <comment>秒杀的起始时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="10" parent="2" name="end_time">
+        <comment>商品的结束时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="11" parent="2" name="create_time">
+        <columns>create_time</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="12" parent="2" name="end_time">
+        <columns>end_time</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="13" parent="2" name="start_time">
+        <columns>start_time</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="14" parent="2" name="PRIMARY">
+        <columns>seckill_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="15" parent="3" name="seckill_id">
+        <comment>抢购商品的信息</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="16" parent="3" name="usertel">
+        <comment>抢到商品的人的电话</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(11)</data-type>
+      </column>
+      <column id="17" parent="3" name="state">
+        <comment>状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="18" parent="3" name="create_time">
+        <comment>创建的时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <index id="19" parent="3" name="create_time">
+        <columns>create_time</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="20" parent="3" name="PRIMARY">
+        <columns>seckill_id
+usertel</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
 </component>
