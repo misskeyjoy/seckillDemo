@@ -11,6 +11,7 @@ public enum SeckillStateEnum {
     //md5 值不一致
     SECKILL_BUSY(-5,"系统繁忙"),
     SECKILL_UNFAILUER(-3, "md5值不一致"),
+    SEKILL_NOTFUOND(-4,"商品未找到"),
     SECKILL_CLOSE(0, "秒杀结束");
     // 秒杀结束 重复秒杀 秒杀失败
     /**

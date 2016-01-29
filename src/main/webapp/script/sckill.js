@@ -1,14 +1,14 @@
 var seckill={
  url:{
     getExposeUrl:function(seckillId){
-        return "http://127.0.0.1:8080/seckill/"+seckillId+"/exposeurl";
+        return "/seckill/"+seckillId+"/exposeurl";
     }
     ,
     getSeckillUrl:function(seckillId,md5){
-        return "http://127.0.0.1:8080/seckill/"+seckillId+"/"+md5+"/execute";
+        return "/seckill/"+seckillId+"/"+md5+"/execute";
     },
     getTimeUrl:function(){
-      return "http://127.0.0.1:8080/seckill/date";
+      return "/seckill/date";
     }
 
  },
@@ -80,8 +80,8 @@ var seckill={
 
     $.ajax({
       	type : "POST",
-      	url : "http://127.0.0.1:8080/seckill/"+seckillId+"/"+md5+"/execute",
-      	dataType: "json",
+      	url : "/seckill/"+seckillId+"/"+md5+"/execute",
+
       	success : function(data){
       	   var success=data["success"];
       	   var error=data["error"];

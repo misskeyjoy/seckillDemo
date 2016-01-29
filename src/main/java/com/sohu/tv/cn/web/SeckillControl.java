@@ -19,17 +19,16 @@ import java.util.List;
 
 /**
  * Created by misskey on 16-1-26.
+ * 1.暴露接口
+ * 2. 秒杀
+ * 3.获取系统时间
+ * 4.查询所有的秒杀
+ * 5.详情页
  */
 @Controller
 @RequestMapping("/seckill")
 public class SeckillControl {
-    /**
-     * 1.暴露接口
-     * 2. 秒杀
-     * 3.获取系统时间
-     * 4.查询所有的秒杀
-     * 5.详情页
-     */
+
     /**
      * 查询所有的秒杀
      *
@@ -64,7 +63,7 @@ public class SeckillControl {
     @ResponseBody
     public Result<Long> getDate(HttpServletResponse response) {
         Date date = new Date();
-        response.setHeader("Access-Control-Allow-Origin", "*");
+        //response.setHeader("Access-Control-Allow-Origin", "*");
         return new Result<Long>(true, date.getTime());
     }
 
@@ -77,11 +76,7 @@ public class SeckillControl {
             method = RequestMethod.POST)
     @ResponseBody
     public Result<SeckillExpose> expose(@PathVariable long seckillId, HttpServletResponse response) {
-        System.out.println("result -expose" +seckillId);
-        /**
-         * todo   解决跨域问题
-         */
-        response.setHeader("Access-Control-Allow-Origin", "*");
+       // response.setHeader("Access-Control-Allow-Origin", "*");
         Result<SeckillExpose> result;
         SeckillExpose expose = seckillService.exportSeckillUrl(seckillId);
         result = new Result<SeckillExpose>(true, expose);
@@ -104,6 +99,7 @@ public class SeckillControl {
          *
          */
         Result<SeckillResult> result;
+       // response.setHeader("Access-Control-Allow-Origin", "*");
         if (phone == null) {
             result = new Result<SeckillResult>(false, "未登陆账号");
             return result;

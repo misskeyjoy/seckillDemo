@@ -85,9 +85,12 @@ public class SeckillServiceImpl implements SeckillService {
     public SeckillResult executeSeckill(long secillId, long userphone, String md5) throws RepeatSeckillException, SeckillCloseException, SeckillException {
         Date currentDate = new Date();
         try {
+            //判断md5是否符合标准
             if (md5 == null || !getMd5(secillId).equals(md5)) {
                 throw new SeckillException(SeckillStateEnum.getState(-3).toString());
             }
+            //返回结果
+            SeckillResult result = new SeckillResult();
 
             /**
              * 影响的行数
@@ -109,7 +112,6 @@ public class SeckillServiceImpl implements SeckillService {
                  */
                 //TODO 插入成功后但是插入信息失败时会导致秒杀失败
                 if (successaffedrows > 0) {
-                    SeckillResult result = new SeckillResult();
                     try {
                         SeckillSuccess seckillSuccess = seckillSuccessDao.queryByIdwidthSeckill(secillId, userphone);
                         result.setSeckillSuccess(seckillSuccess);
